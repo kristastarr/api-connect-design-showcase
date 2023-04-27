@@ -1,0 +1,57 @@
+.App {
+  background-color:  black;
+}
+
+.section {
+  /*height:  1080px;*/
+  border:  3px solid red;
+}
+
+
+.grid--black {
+  background-color:  black;
+}
+
+.grid--white {
+  background-color:  #F2F4F8;
+}
+/*.section--outer {
+  width:  100%;
+  background-color:  pink;
+}*/
+
+
+.col1 {
+  height:  1080px;
+  border:  1px solid blue;
+}
+
+
+.col2 {
+  border:  1px solid blue;
+}
+.section--black {
+  background-color:  black;
+  color:  white;
+}
+
+.section--white {
+  background-color: #F2F4F8;
+  color:  black;
+}
+
+
+.video {
+  height:  500px;
+  background-color:  silver;
+  margin-bottom:  64px;
+  /*width:  80%;*/
+  /*margin: auto;*/
+}
+
+
+footer {
+  height:  200px;
+  width:  100%;
+  background-color:  black;
+}
