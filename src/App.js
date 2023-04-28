@@ -1,171 +1,214 @@
 import './App.scss';
-// import PageSection from "./components/PageSection";
 import { Grid, Column } from '@carbon/react';
 
 function App() {
   return (
     <div className="App">
 
-      {/*One*/}
-      <Grid fullWidth className="grid--black">
-        <Column lg={16} md={8} sm={4} className="section--black">
-          <Grid>
-            <Column lg={6} className="col1">
-              <h1>API Connect</h1>
-              <h2>in Cloud Pak for Integration</h2>
-            </Column>
-            <Column lg={10} className="col1">
-              <h1>image</h1>
-            </Column>
-          </Grid>
-        </Column>
-      </Grid>
 
-
-      {/*Two*/}
-      <Grid fullWidth className="grid--black">
-        <Column lg={16} md={8} sm={4} className="section--black">
-          <Grid>
-            <Column lg={{ span: 10, offset: 3 }} className="col2">       
-              <div className="video"></div>
-            </Column>
-          </Grid>
-        </Column>
-      </Grid>
-
-      
-
-      {/*Three*/}
-      <Grid fullWidth className="grid--black">
-        <Column lg={16} md={8} sm={4} className="section--black">
-          <Grid>
-            <Column lg={6} className="col1">
-               <h2>Powering essential solutions</h2>
-            </Column>
-             <Column lg={10} className="col1">
-              <p>akfj;alsdjf;alksdjf;klasdjf as;df paragraphs</p>
-            </Column>
-          </Grid>
-        </Column>
-      </Grid>
-   
-
-
-      {/*Four*/}
-      <Grid fullWidth className="grid--white">
-        <Column lg={16} md={8} sm={4} className="section--white">
-          <Grid>
-            <Column lg={6} className="col1">   
-              <h2>Supports all the modern API types</h2>
-            </Column>
-            <Column lg={10} className="col1">
-              <h1>image</h1>
-            </Column>
-          </Grid>
-        </Column>
-      </Grid>
+      <header className={"container--outer outer--black"}>
+        <div className={"container--inner-header inner--black"}>
+          <div className={"col--40"}>
+            <h1>IBM API Connect</h1>
+            <h2 className="title--span">in Cloud Pak for Integration</h2>
+          </div>
+          <div className="col--60">
+            <div className="image">Image</div>
+          </div>
+        </div>
+      </header>
 
 
 
-      {/*Five*/}
-      <Grid fullWidth className="grid--white">
-        <Column lg={16} md={8} sm={4} className="section--white">
-          <Grid>
-            <Column lg={10} className="col1">
-              <h2>image</h2>
-            </Column>
-            <Column lg={6} className="col1">
-              <h2>Simplified development loop</h2>
-            </Column>
-          </Grid>
-        </Column>
-      </Grid>
-
-
-
-      {/*Six*/}
-      <Grid fullWidth className="grid--white">
-        <Column lg={16} md={8} sm={4} className="section--white">
-          <Grid>
-            <Column lg={6} className="col1">
-              <h2>Automate testing with Watson AI</h2>
-            </Column>
-            <Column lg={10} className="col1">
-              <h1>image</h1>
-            </Column>
-          </Grid>
-        </Column>
-      </Grid>
+      <section className={"container--outer outer--black"}>
+        <div className={"container--inner--video inner--black"}>
+          <div className={"video-placeholder"}>video</div>
+        </div>
+      </section>
 
 
 
 
-      {/*Seven*/}
-      <Grid fullWidth className="grid--white">
-        <Column lg={16} md={8} sm={4} className="section--white">
-          <Grid>
-            <Column lg={10} className="col1">       
-              <h2>image</h2>
-            </Column>
-             <Column lg={6} className="col1">
-              <h2>Monitor APIs with ease</h2>
-            </Column>
-          </Grid>
-        </Column>
-      </Grid>
+      <section className={"container--outer outer--black"}>
+        <div className={"container--inner inner--black"}>
+          <div className={"col--40"}>
+            <h3 className={"section--black_h3"}>Powering Essential Solutions</h3>
+          </div> 
+          <div className="col--60">
+            <p className="intro-p">With an increasing need for virtual services during the pandemic, <span className="bold">APIs (application programming interfaces)</span> continue to be the backbone for crucial infrastructures by connecting applications and data sources.</p>
+            <p className="intro-p"><span className={"bold"}> IBM API Connect</span>, as a part of Cloud Pak for Integration, enables software developers to create, manage, and share APIs in a single, unified experience. Through shared assets and automated testing, our solution improves API quality and slashes development cycles from weeks to days.</p>
+            <p className="intro-p">Following our own IBM Design Thinking loop, we completed extensive research to understand our users' pain points and build empathy to design and deliver an elegant product.</p>
+          </div>         
+        </div>
+      </section>
+
+
+      <section className={"container--outer outer--gray"}>
+        <div className={"container--inner inner--gray"}>
+          <div className={"col--40"}>
+            <h3>Supports all the modern API types</h3>
+            <p className="feature-text-p">Creating an API requires expertise, especially with emerging API types.</p>
+            <span className="bold">To minimize entry barriers, we:</span>
+              <ul className="feature-bullet-list">
+                <li>Created built-in templates to rapidly 
+                create, test and deploy APIs</li>
+                <li>Designed tools to visually compose 
+                and compare API architectures</li>
+                <li>Incorporated intelligent suggestions 
+                to improve data representations</li>
+              </ul>
+          </div>  
+          <div className="col--60 col--image">
+            <div className="image">Image</div>
+          </div>
+        </div>
+      </section>
+
+
+      <section className={"container--outer outer--gray"}>
+        <div className={"container--inner inner--gray"}>
+          <div className="col--60 col--image">
+            <div className="image">Image</div>
+          </div>
+          <div className={"col--40 text--col--right"}>
+            <h3 className="wrap-title-text">Simplified development loop</h3>
+            <p className="feature-text-p">Today, software developers need to juggle between separate API editing and testing tools.</p>
+             <span className="bold"> To address this, we:</span>
+            <ul className="feature-bullet-list">
+              <li>Consolidated building and testing into a single user interface</li>
+              <li>Designed effortless visual debugging tools to isolate and remedy errors</li>
+            </ul> 
+          </div>   
+        </div>
+      </section>
 
 
 
 
-      {/*Eight*/}
-      <Grid fullWidth className="grid--white">
-        <Column lg={16} md={8} sm={4} className="section--white">
-          <Grid>
-            <Column lg={6} className="col1">
-              <h2>All in one place</h2>
-            </Column>
-            <Column lg={10} className="col1">
-              <h1>image</h1>
-            </Column>
-          </Grid>
-        </Column>
-      </Grid>
+      <section className={"container--outer outer--gray"}>
+        <div className={"container--inner inner--gray"}>
+          <div className={"col--40"}>
+            <h3 className="wrap-title-text">Automate testing with Watson AI</h3>
+            <p className="feature-text-p">Writing tests is tedious and time-consuming but necessary to ensure services stay up and running.  <span className="bold">We leveraged AI solution to:</span></p>
+            <ul className="feature-bullet-list">
+              <li>Use machine learning to automate API testing with 100% test coverage</li>
+              <li>Evaluate data to identify testing gaps from real use cases</li>
+              <li>Derive insights to handle complex scenarios to reduce repetitive tasks</li>
+            </ul>
+          </div>  
+          <div className="col--60 col--image">
+            <div className="image">Image</div>
+          </div>
+        </div>
+      </section>
 
 
 
-      {/*Nine*/}
-      <Grid fullWidth className="grid--black">
-      <Column lg={16} md={8} sm={4} className="section--black">
-        <Grid>
-          <Column lg={6} className="col1">
-          <h2>The loop guides us</h2>
-          </Column>
-           <Column lg={10} className="col1">
-          <h1>infinity image</h1>
-          <p>al;kfj;alsdjf;aklsjdf;lasdf;j;alksjdf</p>
-          </Column>
-        </Grid>
-      </Column>
-    </Grid>
+
+      <section className={"container--outer outer--gray"}>
+        <div className={"container--inner inner--white"}>
+          <div className="col--60 col--gray">
+            <div className="image">Image</div>
+          </div>
+          <div className={"col--40 text--col--right"}>
+            <h3>Monitor APIs with ease</h3>
+            <p className="feature-text-p">Monitoring crucial API data is frustrating when it’s scattered across different sources.</p>
+            <span className="bold">To address this, we:</span>
+            <ul className="feature-bullet-list">
+              <li>Organized significant metrics into a curated dashboard</li>
+              <li>Highlighted trends so potential insights are not left undiscovered</li>
+            </ul>
+          </div>  
+        </div>
+      </section>
 
 
-    {/*Ten*/}
-    <Grid fullWidth className="grid--black">
-      <Column lg={16} md={8} sm={4} className="section--black">
-        <Grid>
-          <Column lg={6} className="col1">
-          <h2>Customers love us</h2>
-          </Column>
-           <Column lg={10} className="col1">
-          <h1>some quotes</h1>
-          </Column>
-        </Grid>
-      </Column>
-    </Grid>
+      <section className={"container--outer outer--gray"}>
+        <div className={"container--inner inner--gray"}>
+          <div className={"col--40"}>
+              <h3>All in one place</h3>
+              <p className="feature-text-p">It’s incredibly challenging to find or reuse assets across integration portfolio.</p>
+              <span className="bold">To address this, we:</span>
+              <ul className="feature-bullet-list">
+                <li>Designed a visually engaging lightweight portal that allows Application developers to discover APIs and other integration assets</li>
+                <li>Organized content that inspire users to continue innovating without duplicating work</li>
+              </ul>
+          </div>  
+          <div className="col--60 col--image">
+            <div className="image">Image</div>
+          </div>
+        </div>
+      </section>
 
-    <footer></footer>
 
-  </div>)
+
+      <section className={"container--outer outer--black"}>
+        <div className={"container--inner inner--black"}>
+          <div className={"col--40"}>
+              <h3 className={"section--black_h3"}>The loop guides us</h3>      
+            </div>
+          <div className="col--60 col--image">
+            <div className="infinity-placeholder">loop</div>
+              <p className={"conclusion-p"}>During our research and design process, we developed domain knowledge about the complexities of APIs in a world that is increasingly reliant on them.</p> 
+              <p className={"conclusion-p"}>We built a thorough understanding of how software developers think to balance solving their current pain points with anticipating their future needs.</p> 
+              <p className={"conclusion-p"}>The result is <span className={"bold"}>a streamlined, elegant, and efficient API management solution</span> that empowers our users to tackle the world’s most pressing challenges.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section className={"container--outer outer--black"}>
+        <div className={"container--inner inner--black"}>
+          <div className={"col--40"}>
+             <h3 className={"section--black_h3"}>Customers love us!</h3>
+          </div>
+          <div className="col--60">
+            <ul className={"quotes-list"}>
+              <li>
+                <div className="pic"></div>
+                <div className="quote-text">
+                <span className={"bold"}>“Very powerful and professional API solution with a great interface”</span>
+                <div>Integration Developer</div>
+                </div>
+              </li>
+               <li>
+                <div className="pic"></div>
+                <div className={"quote-text"}>
+                <span className={"bold"}>“One of the best API management tool”</span>
+                <div>Senior System Engineer</div>
+                </div>
+              </li>
+               <li>
+                <div className="pic"></div>
+                <div className="quote-text">
+                <span className={"bold"}>"Robust tool for API lifecycle management"</span>
+                <div>Technical Support Engineer</div>
+                </div>
+              </li>
+               <li>
+                <div className="pic"></div>
+                  <div className="quote-text">
+                  <span className={"bold"}>"A leader for full life cycle API management"</span>
+                  <div>Gartner Magic Quadrant report</div>
+                </div>
+              </li>
+            </ul>
+            <ul className={"logos-grid"}>
+              <li className={"logo"}>Kaiser</li>
+              <li className={"logo"}>Aetna</li>
+              <li className={"logo"}>New Balance</li>
+              <li className={"logo"}>Coach</li>
+              <li className={"logo"}>CitiBank</li>
+              <li className={"logo"}>Toyota</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <footer></footer>
+    
+    </div>)
 };
 
 export default App;
