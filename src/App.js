@@ -1,5 +1,5 @@
 import './App.scss';
-import { Grid, Column } from '@carbon/react';
+import hero from './images/hero.png';
 
 function App() {
   return (
@@ -13,7 +13,8 @@ function App() {
             <h2 className="title--span">in Cloud Pak for Integration</h2>
           </div>
           <div className="col--60">
-            <div className="image">Image</div>
+            {/*<div className="image">Image</div>*/}
+            <img src={hero} />
           </div>
         </div>
       </header>
