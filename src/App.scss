@@ -1,4 +1,4 @@
-.App {
+html {
   background-color:  black;
 }
 
@@ -19,15 +19,18 @@
   display:  flex;
   margin-left:  auto;
   margin-right:  auto;
-  padding:  100px 50px 100px;
+  padding:  100px 50px 50px;
+
 }
 
-.container--inner-header {
-  max-width:  1312px;
+.container--inner--header {
+  max-width:  1412px;
   display:  flex;
   margin-left:  auto;
   margin-right:  auto;
-  padding:  0 50px 0 40px;
+  padding:  0 0 0 50px;
+  background-color: black;
+  color: white;
 }
 
 .inner--gray {
@@ -38,12 +41,6 @@
 .inner--black {
   background-color:  black;
   color:  white;
-}
-
-.image {
-  background-color:  silver;
-  width:  100%;
-  height:  100%;
 }
 
 .container--inner--video {
@@ -65,6 +62,7 @@
 .col--40 {
   width:  40%;
   height:  500px;
+  padding-top:  56px;
 }
 
 .col--60 {
@@ -72,7 +70,7 @@
 }
 
 footer {
-  height:  250px;
+  height:  100px;
   width:  100%;
   background-color:  black;
 }
@@ -105,7 +103,6 @@ h3 {
   margin-bottom:  28px;
 }
 
-
 .intro-p {
   font-family: IBM Plex Sans;
   font-size: 16px;
@@ -115,7 +112,6 @@ h3 {
   margin-bottom:  24px;
 }
 
-
 .conclusion-p {
   font-family: IBM Plex Sans;
   font-size: 16px;
@@ -123,14 +119,6 @@ h3 {
   font-weight: regular;
   width:  430px;
   margin-bottom:  24px;
-}
-
-
-.infinity-placeholder {
-  width:  350px;
-  height:  190px;
-  background-color:  silver;
-  margin-bottom:  48px;
 }
 
 .section--black_h3 {
@@ -147,13 +135,12 @@ h3 {
 }
 
 
-.pic {
+.profile-pic {
   width: 45px;
   height: 45px;
-  background-color: silver;
-  border-radius:  50%;
   margin:  0 12px 24px 12px;
 }
+
 
 .quotes-list > li {
   display:  flex;
@@ -168,14 +155,6 @@ h3 {
 .quote-text > .bold {
   margin-bottom:   5px;
 }
-
-.logos-grid {
-  width:  99%;
-  display:  flex;
-  flex-wrap:  wrap;
-  margin-top:  16px;
-}
-
 
 .feature-text-p {
   max-width:  340px;
@@ -213,9 +192,57 @@ h3 {
   padding-left:  48px;
 }
 
+.hero-image,
+.image,
+.ai-test-image {
+  width:  100%;
+}
+
+.api-creation-image {
+  width:  100%;
+  z-index:  2;
+  transform:  scale(1.35) translate(-48px, 0);
+}
+
+.loop-img {
+  width:  320px;
+  margin-bottom:  50px;
+}
+
+.logos-grid {
+  width:  99%;
+  display:  flex;
+  flex-wrap:  wrap;
+  margin:  28px 12px;
+}
+
 .logo { 
-  width: calc(33% - 20px); 
-  height:  86px; 
-  background-color: silver; 
-  margin: 10px;
+  width: calc(33%); 
+  margin:  16px 0;
+  padding-right:  20px;
+  display: flex;
+  justify-content:  left;
+  align-items:  center ;
+}
+
+.logo-img {
+  width:  88%;
+}
+
+.logo-image--kaiser {
+  width:  100%;
+  height:  auto;
+}
+
+.logo-image--nb {
+  height: 78%;
+  width:  auto;
+  margin-left:  auto;
+  margin-right:  auto;
+}
+
+.video {
+  width:  70%;
+  margin-left:  auto;
+  margin-right:  auto;
 }
