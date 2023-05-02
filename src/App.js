@@ -1,4 +1,6 @@
 import './App.scss';
+import React, { useState, useEffect } from 'react';
+
 import aiTest from './images/aiTest.png';
 import analytics from './images/analytics.png';
 import apiCatalog from './images/apiCatalog.png';
@@ -17,55 +19,80 @@ import persona2 from './images/persona2.png';
 import persona3 from './images/persona3.png';
 import persona4 from './images/persona4.png';
 import video from './images/video.mp4';
+import HeroSvg from './components/HeroSvg';
 
 
 
 function App() {
+
+const [scrollPosition, setScrollPosition] = useState(0);
+
+
+const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+};
+
+useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+}, []);
+
   return (
     <div className="App">
 
-
-      <header className={"container--outer outer--black"}>
+      <header className={"container--outer outer--black section--one"}>
         <div className={"container--inner--header"}>
           <div className={"col--40"}>
             <h1>IBM API Connect</h1>
             <h2 className="title--span">in Cloud Pak for Integration</h2>
           </div>
           <div className="col--60"> 
-            <img className="hero-image" src={hero} />
+            <HeroSvg />
           </div>
         </div>
       </header>
 
 
+{/*<div className="animation-test">
+  <div className={`test-text ${scrollPosition > 500 ? "isVisible" : ""}`}>
+  test test test</div><
+  /div>*/}
 
-      <section className={"container--outer outer--black"}>
+      <section className={"container--outer outer--black section--two"}>
         <div className={"container--inner--video"}>
-              <video className="video" controls autostart autoPlay={false} src={video} type="video/mp4" />
+            <video className="video" controls autostart autoPlay={false} src={video} type="video/mp4" />
         </div>
       </section>
 
 
 
 
-      <section className={"container--outer outer--black"}>
+      <section className={"container--outer outer--black section--three"}>
         <div className={"container--inner inner--black"}>
           <div className={"col--40"}>
-            <h3 className={"section--black_h3"}>Powering Essential Solutions</h3>
+            <h3 className={`section--black_h3 section--appear ${scrollPosition > 1117 ? "isVisible" : ""}`}>Powering Essential Solutions</h3>
           </div> 
-          <div className="col--60">
-            <p className="intro-p">With an increasing need for virtual services during the pandemic, <span className="bold">APIs (application programming interfaces)</span> continue to be the backbone for crucial infrastructures by connecting applications and data sources.</p>
-            <p className="intro-p"><span className={"bold"}> IBM API Connect</span>, as a part of Cloud Pak for Integration, enables software developers to create, manage, and share APIs in a single, unified experience. Through shared assets and automated testing, our solution improves API quality and slashes development cycles from weeks to days.</p>
-            <p className="intro-p">Following our own IBM Design Thinking loop, we completed extensive research to understand our users' pain points and build empathy to design and deliver an elegant product.</p>
+          <div className={"col--60"}>
+            <p className={`intro-p section--appear ${scrollPosition > 1167 ? "isVisible" : ""}`}>With an increasing need for virtual services during the pandemic, <span className="bold">APIs (application programming interfaces)</span> continue to be the backbone for crucial infrastructures by connecting applications and data sources.</p>
+            <p className={`intro-p section--appear ${scrollPosition >  1197 ? "isVisible" : ""}`}><span className={"bold"}> IBM API Connect</span>, as a part of Cloud Pak for Integration, enables software developers to create, manage, and share APIs in a single, unified experience. Through shared assets and automated testing, our solution improves API quality and slashes development cycles from weeks to days.</p>
+            <p className={`intro-p section--appear ${scrollPosition > 1227 ? "isVisible" : ""}`}>Following our own IBM Design Thinking loop, we completed extensive research to understand our users' pain points and build empathy to design and deliver an elegant product.</p>
+    {/*        <div className="circle"></div>
+            <div className="circle"></div>*/}
           </div>         
         </div>
       </section>
 
 
-      <section className={"container--outer outer--gray"}>
+      <section className={"container--outer outer--gray section--four"}>
         <div className={"container--inner inner--gray"}>
           <div className={"col--40"}>
-            <h3>Supports all the modern API types</h3>
+            <h3 className={`section--appear ${scrollPosition > 1869 ? "isVisible" : ""}`}>Supports all the modern API types</h3>
+            
+            <div className={`section--appear ${scrollPosition > 1919 ? "isVisible" : ""}`}>
             <p className="feature-text-p">Creating an API requires expertise, especially with emerging API types.</p>
             <span className="bold">To minimize entry barriers, we:</span>
               <ul className="feature-bullet-list">
@@ -76,7 +103,8 @@ function App() {
                 <li>Incorporated intelligent suggestions 
                 to improve data representations</li>
               </ul>
-          </div>  
+          </div> 
+          </div> 
           <div className="col--60">
                <img className="api-creation-image" src={apiCreation} />
           </div>
@@ -84,19 +112,21 @@ function App() {
       </section>
 
 
-      <section className={"container--outer outer--gray"}>
+      <section className={"container--outer outer--gray section--five"}>
         <div className={"container--inner inner--gray"}>
           <div className="col--60">
-<img className="hero-image" src={assembly} />
+            <img className="hero-image" src={assembly} />
           </div>
           <div className={"col--40 text--col--right"}>
-            <h3 className="wrap-title-text">Simplified development loop</h3>
+            <h3 className={`wrap-title-text section--appear ${scrollPosition > 2440 ? "isVisible" : ""} `}>Simplified development loop</h3>
+            <div className={`section--appear ${scrollPosition > 2490 ? "isVisible" : ""}`}>
             <p className="feature-text-p">Today, software developers need to juggle between separate API editing and testing tools.</p>
              <span className="bold"> To address this, we:</span>
             <ul className="feature-bullet-list">
               <li>Consolidated building and testing into a single user interface</li>
               <li>Designed effortless visual debugging tools to isolate and remedy errors</li>
             </ul> 
+            </div>
           </div>   
         </div>
       </section>
@@ -104,16 +134,18 @@ function App() {
 
 
 
-      <section className={"container--outer outer--gray"}>
+      <section className={"container--outer outer--gray section--six"}>
         <div className={"container--inner inner--gray"}>
           <div className={"col--40"}>
-            <h3 className="wrap-title-text">Automate testing with Watson AI</h3>
+            <h3 className={`wrap-title-text section--appear ${scrollPosition > 3180 ? "isVisible" : ""} `}>Automate testing with Watson AI</h3>
+            <div className={`section--appear ${scrollPosition > 3230 ? "isVisible" : ""}`} >
             <p className="feature-text-p">Writing tests is tedious and time-consuming but necessary to ensure services stay up and running.  <span className="bold">We leveraged AI solution to:</span></p>
             <ul className="feature-bullet-list">
               <li>Use machine learning to automate API testing with 100% test coverage</li>
               <li>Evaluate data to identify testing gaps from real use cases</li>
               <li>Derive insights to handle complex scenarios to reduce repetitive tasks</li>
             </ul>
+            </div>
           </div>  
           <div className="col--60">
            <img className="ai-test-image" src={aiTest} />
@@ -125,36 +157,46 @@ function App() {
 
 
 
-      <section className={"container--outer outer--gray"}>
+      <section className={"container--outer outer--gray section--seven"}>
         <div className={"container--inner inner--white"}>
           <div className="col--60 col--gray">
             <img className="hero-image" src={analytics} />
+          </div>
+
+          <div className={"col--40 text--col--right"}>
+            <h3 className={`section--appear ${scrollPosition > 3982 ? "isVisible" : ""} `}>Monitor APIs with ease</h3>
+
+            <div className={`section--appear ${scrollPosition > 4032 ? "isVisible" : ""} `}>
+              <p className="feature-text-p">Monitoring crucial API data is frustrating when it’s scattered across different sources.</p>
+              <span className="bold">To address this, we:</span>
+              <ul className="feature-bullet-list">
+                <li>Organized significant metrics into a curated dashboard</li>
+                <li>Highlighted trends so potential insights are not left undiscovere</li>
+              </ul>
+            </div>
+            </div> 
 
           </div>
-          <div className={"col--40 text--col--right"}>
-            <h3>Monitor APIs with ease</h3>
-            <p className="feature-text-p">Monitoring crucial API data is frustrating when it’s scattered across different sources.</p>
-            <span className="bold">To address this, we:</span>
-            <ul className="feature-bullet-list">
-              <li>Organized significant metrics into a curated dashboard</li>
-              <li>Highlighted trends so potential insights are not left undiscovered</li>
-            </ul>
-          </div>  
-        </div>
       </section>
 
 
-      <section className={"container--outer outer--gray"}>
+      <section className={"container--outer outer--gray section--eight"}>
         <div className={"container--inner inner--gray"}>
           <div className={"col--40"}>
-              <h3>All in one place</h3>
+        
+              <h3 className={`section--appear ${scrollPosition > 4649 ? "isVisible" : ""}`}>All in one place</h3>
+
+                <div className={`section--appear ${scrollPosition > 4699 ? "isVisible" : ""} `}>
               <p className="feature-text-p">It’s incredibly challenging to find or reuse assets across integration portfolio.</p>
               <span className="bold">To address this, we:</span>
               <ul className="feature-bullet-list">
                 <li>Designed a visually engaging lightweight portal that allows Application developers to discover APIs and other integration assets</li>
                 <li>Organized content that inspire users to continue innovating without duplicating work</li>
               </ul>
-          </div>  
+              </div>
+
+              </div>
+ 
           <div className="col--60 col--image">
 <img className="api-creation-image" src={apiCatalog} />
             
@@ -164,28 +206,32 @@ function App() {
 
 
 
-      <section className={"container--outer outer--black"}>
+      <section className={"container--outer outer--black section--nine"}>
         <div className={"container--inner inner--black"}>
           <div className={"col--40"}>
-              <h3 className={"section--black_h3"}>The loop guides us</h3>      
-            </div>
+            <h3 className={`section--black_h3 section--appear ${scrollPosition > 5300 ? "isVisible" : ""}`}>The loop guides us</h3>      
+          </div>
           <div className="col--60">
-              <img className="loop-img" src={loop} />
-              <p className={"conclusion-p"}>During our research and design process, we developed domain knowledge about the complexities of APIs in a world that is increasingly reliant on them.</p> 
-              <p className={"conclusion-p"}>We built a thorough understanding of how software developers think to balance solving their current pain points with anticipating their future needs.</p> 
-              <p className={"conclusion-p"}>The result is <span className={"bold"}>a streamlined, elegant, and efficient API management solution</span> that empowers our users to tackle the world’s most pressing challenges.</p>
+            
+                   <img className={"loop-img"} src={loop} /> 
+      
+
+              <p className={`conclusion-p section--appear ${scrollPosition > 5330 ? "isVisible" : ""} `}>During our research and design process, we developed domain knowledge about the complexities of APIs in a world that is increasingly reliant on them.</p> 
+              <p className={`conclusion-p section--appear ${scrollPosition > 5360 ? "isVisible" : ""} `}>We built a thorough understanding of how software developers think to balance solving their current pain points with anticipating their future needs.</p> 
+              <p className={`conclusion-p section--appear ${scrollPosition > 5380 ? "isVisible" : ""} `}>The result is <span className={"bold"}>a streamlined, elegant, and efficient API management solution</span> that empowers our users to tackle the world’s most pressing challenges.</p>
+
           </div>
         </div>
       </section>
 
 
-      <section className={"container--outer outer--black"}>
+      <section className={"container--outer outer--black section--ten"}>
         <div className={"container--inner inner--black"}>
           <div className={"col--40"}>
-             <h3 className={"section--black_h3"}>Customers love us!</h3>
+             <h3 className={`section--black_h3 section--appear ${scrollPosition > 5878 ? "isVisible" : ""}`}>Customers love us!</h3>
           </div>
           <div className="col--60">
-            <ul className={"quotes-list"}>
+            <ul className={`quotes-list section--appear ${scrollPosition > 5938 ? "isVisible" : ""}`}>
               <li>
                 <img className="profile-pic" src={persona1} />
                 <div className="quote-text">
@@ -215,7 +261,7 @@ function App() {
                 </div>
               </li>
             </ul>
-            <ul className={"logos-grid"}>
+            <ul className={`logos-grid section--appear ${scrollPosition > 5968 ? "isVisible" : ""}`}>
               <li className={"logo"}><img className="logo-img" src={logoAetna}/></li>
               <li className={"logo"}><img className="logo-img" src={logoCitibank}/></li>
               <li className={"logo"}><img className="logo-img" src={logoCoach}/></li>
