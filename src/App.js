@@ -56,12 +56,6 @@ useEffect(() => {
         </div>
       </header>
 
-
-{/*<div className="animation-test">
-  <div className={`test-text ${scrollPosition > 500 ? "isVisible" : ""}`}>
-  test test test</div><
-  /div>*/}
-
       <section className={"container--outer outer--black section--two"}>
         <div className={"container--inner--video"}>
             <video className="video" controls autostart autoPlay={false} src={video} type="video/mp4" />
@@ -73,6 +67,8 @@ useEffect(() => {
 
       <section className={"container--outer outer--black section--three"}>
         <div className={"container--inner inner--black"}>
+ <          div className="circle--one"></div>
+            <div className="circle--two"></div> 
           <div className={"col--40"}>
             <h3 className={`section--black_h3 section--appear ${scrollPosition > 1117 ? "isVisible" : ""}`}>Powering Essential Solutions</h3>
           </div> 
@@ -80,16 +76,19 @@ useEffect(() => {
             <p className={`intro-p section--appear ${scrollPosition > 1167 ? "isVisible" : ""}`}>With an increasing need for virtual services during the pandemic, <span className="bold">APIs (application programming interfaces)</span> continue to be the backbone for crucial infrastructures by connecting applications and data sources.</p>
             <p className={`intro-p section--appear ${scrollPosition >  1197 ? "isVisible" : ""}`}><span className={"bold"}> IBM API Connect</span>, as a part of Cloud Pak for Integration, enables software developers to create, manage, and share APIs in a single, unified experience. Through shared assets and automated testing, our solution improves API quality and slashes development cycles from weeks to days.</p>
             <p className={`intro-p section--appear ${scrollPosition > 1227 ? "isVisible" : ""}`}>Following our own IBM Design Thinking loop, we completed extensive research to understand our users' pain points and build empathy to design and deliver an elegant product.</p>
-    {/*        <div className="circle"></div>
-            <div className="circle"></div>*/}
-          </div>         
+         
+          
+          </div>  
+
         </div>
+
       </section>
 
 
       <section className={"container--outer outer--gray section--four"}>
         <div className={"container--inner inner--gray"}>
           <div className={"col--40"}>
+
             <h3 className={`section--appear ${scrollPosition > 1869 ? "isVisible" : ""}`}>Supports all the modern API types</h3>
             
             <div className={`section--appear ${scrollPosition > 1919 ? "isVisible" : ""}`}>
@@ -106,6 +105,7 @@ useEffect(() => {
           </div> 
           </div> 
           <div className="col--60">
+
                <img className="api-creation-image" src={apiCreation} />
           </div>
         </div>
@@ -114,6 +114,7 @@ useEffect(() => {
 
       <section className={"container--outer outer--gray section--five"}>
         <div className={"container--inner inner--gray"}>
+        <div className={"circle--three"}></div>
           <div className="col--60">
             <img className="hero-image" src={assembly} />
           </div>
@@ -136,6 +137,8 @@ useEffect(() => {
 
       <section className={"container--outer outer--gray section--six"}>
         <div className={"container--inner inner--gray"}>
+                <div className={"circle--four"}></div>
+
           <div className={"col--40"}>
             <h3 className={`wrap-title-text section--appear ${scrollPosition > 3180 ? "isVisible" : ""} `}>Automate testing with Watson AI</h3>
             <div className={`section--appear ${scrollPosition > 3230 ? "isVisible" : ""}`} >
@@ -147,7 +150,7 @@ useEffect(() => {
             </ul>
             </div>
           </div>  
-          <div className="col--60">
+          <div className="col--60 z-index-6">
            <img className="ai-test-image" src={aiTest} />
            
           </div>
@@ -159,6 +162,7 @@ useEffect(() => {
 
       <section className={"container--outer outer--gray section--seven"}>
         <div className={"container--inner inner--white"}>
+         <div className={"circle--five"}></div>
           <div className="col--60 col--gray">
             <img className="hero-image" src={analytics} />
           </div>
@@ -175,13 +179,15 @@ useEffect(() => {
               </ul>
             </div>
             </div> 
-
+  <div className={"circle--six"}></div>
           </div>
       </section>
 
 
       <section className={"container--outer outer--gray section--eight"}>
         <div className={"container--inner inner--gray"}>
+      
+        <div className={"circle--seven"}></div>
           <div className={"col--40"}>
         
               <h3 className={`section--appear ${scrollPosition > 4649 ? "isVisible" : ""}`}>All in one place</h3>
@@ -197,7 +203,7 @@ useEffect(() => {
 
               </div>
  
-          <div className="col--60 col--image">
+          <div className="col--60 col--image z-index-6">
 <img className="api-creation-image" src={apiCatalog} />
             
           </div>
@@ -206,8 +212,8 @@ useEffect(() => {
 
 
 
-      <section className={"container--outer outer--black section--nine"}>
-        <div className={"container--inner inner--black"}>
+      <section className={"container--outer outer--loop section--nine"}>
+        <div className={"container--inner inner--loop"}>
           <div className={"col--40"}>
             <h3 className={`section--black_h3 section--appear ${scrollPosition > 5300 ? "isVisible" : ""}`}>The loop guides us</h3>      
           </div>
