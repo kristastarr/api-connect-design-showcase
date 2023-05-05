@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/api-connect-design-showcase/static/css/main.c1fe2057.css",
-    "main.js": "/api-connect-design-showcase/static/js/main.6a7fa9f4.js",
+    "main.css": "/api-connect-design-showcase/static/css/main.bfff1520.css",
+    "main.js": "/api-connect-design-showcase/static/js/main.6fa5fd37.js",
     "static/media/video.mp4": "/api-connect-design-showcase/static/media/video.5142e56342b4358782e9.mp4",
     "static/media/video-poster.png": "/api-connect-design-showcase/static/media/video-poster.6296f4b9f8bc069dada4.png",
     "static/media/aiTest.png": "/api-connect-design-showcase/static/media/aiTest.86981bdfd21960495cf2.png",
@@ -32,6 +32,7 @@
     "static/media/IBMPlexSerif-Regular-Cyrillic.woff": "/api-connect-design-showcase/static/media/IBMPlexSerif-Regular-Cyrillic.806a7a7745e7bd864174.woff",
     "static/media/IBMPlexSans-LightItalic-Cyrillic.woff": "/api-connect-design-showcase/static/media/IBMPlexSans-LightItalic-Cyrillic.abeb6d68a7f128eaa1cd.woff",
     "static/media/IBMPlexMono-SemiBoldItalic-Latin1.woff": "/api-connect-design-showcase/static/media/IBMPlexMono-SemiBoldItalic-Latin1.cc628a3da5e5810acebe.woff",
+    "static/media/logoKaiser.png": "/api-connect-design-showcase/static/media/logoKaiser.f23aad24ce6a7858464c.png",
     "static/media/IBMPlexSans-Italic-Cyrillic.woff": "/api-connect-design-showcase/static/media/IBMPlexSans-Italic-Cyrillic.f5be008474d38b4cf15a.woff",
     "static/media/IBMPlexSans-LightItalic-Latin2.woff": "/api-connect-design-showcase/static/media/IBMPlexSans-LightItalic-Latin2.13aa346ec359eaa168e2.woff",
     "static/media/IBMPlexMono-SemiBoldItalic-Cyrillic.woff": "/api-connect-design-showcase/static/media/IBMPlexMono-SemiBoldItalic-Cyrillic.164bc7c64a15028f6b19.woff",
@@ -76,6 +77,7 @@
     "static/media/IBMPlexSans-Light-Latin1.woff2": "/api-connect-design-showcase/static/media/IBMPlexSans-Light-Latin1.bfefc1c5dd4c689b4f0f.woff2",
     "static/media/IBMPlexMono-SemiBold-Cyrillic.woff": "/api-connect-design-showcase/static/media/IBMPlexMono-SemiBold-Cyrillic.d6f3290223965413af92.woff",
     "static/media/IBMPlexMono-Light-Latin2.woff": "/api-connect-design-showcase/static/media/IBMPlexMono-Light-Latin2.2034d12242df27d980b8.woff",
+    "static/media/logoToyota.png": "/api-connect-design-showcase/static/media/logoToyota.abbe581ca3b6ff513692.png",
     "static/media/IBMPlexSerif-Light-Cyrillic.woff2": "/api-connect-design-showcase/static/media/IBMPlexSerif-Light-Cyrillic.79752c5c990ac51471f4.woff2",
     "static/media/IBMPlexMono-Regular-Latin2.woff": "/api-connect-design-showcase/static/media/IBMPlexMono-Regular-Latin2.0befeb0f9f061f052717.woff",
     "static/media/IBMPlexSerif-Regular-Cyrillic.woff2": "/api-connect-design-showcase/static/media/IBMPlexSerif-Regular-Cyrillic.362a779400aac0be5a12.woff2",
@@ -192,11 +194,11 @@
     "static/media/IBMPlexMono-Light-Latin3.woff2": "/api-connect-design-showcase/static/media/IBMPlexMono-Light-Latin3.8a014da16bb5df1e9830.woff2",
     "static/media/IBMPlexMono-Regular-Latin3.woff2": "/api-connect-design-showcase/static/media/IBMPlexMono-Regular-Latin3.cacfd1d7dbd14067b970.woff2",
     "index.html": "/api-connect-design-showcase/index.html",
-    "main.c1fe2057.css.map": "/api-connect-design-showcase/static/css/main.c1fe2057.css.map",
-    "main.6a7fa9f4.js.map": "/api-connect-design-showcase/static/js/main.6a7fa9f4.js.map"
+    "main.bfff1520.css.map": "/api-connect-design-showcase/static/css/main.bfff1520.css.map",
+    "main.6fa5fd37.js.map": "/api-connect-design-showcase/static/js/main.6fa5fd37.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1fe2057.css",
-    "static/js/main.6a7fa9f4.js"
+    "static/css/main.bfff1520.css",
+    "static/js/main.6fa5fd37.js"
   ]
 }
