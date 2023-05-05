@@ -188,7 +188,7 @@ useEffect(() => {
               <h3 className={`section--white_h3 section--appear ${scrollPosition > 4200 ? "isVisible" : ""}`}>All in one place</h3>
 
                 <div className={`section--appear ${scrollPosition > 4300 ? "isVisible" : ""} `}>
-              <p className="feature-text-p">It’s incredibly challenging to find or reuse assets across integration portfolio.  To address this, we:</p>
+              <p className="feature-text-p">It’s incredibly challenging to find or reuse assets across integration portfolios.  To address this, we:</p>
               <ul className="feature-bullet-list">
                 <li>Designed a visually engaging and lightweight portal that allows Application developers to discover APIs and other integration assets</li>
                 <li>Organized content that inspire users to continue innovating without duplicating work</li>
