@@ -2,7 +2,13 @@
 import '../../App.scss';
 import React, { useState, useEffect } from 'react';
 import './home-page.scss';
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect, // Be sure to add this import
+} from "react-router-dom";
 
 import aiTest from '../../images/aiTest.png';
 import analytics from '../../images/analytics.png';
@@ -28,6 +34,19 @@ import HeroSvg from '../../components/HeroSvg';
 
 const HomePage = () => {
 
+
+  // function renderFn({ location }) {
+  //   // If the user is not logged in, redirect to login
+  //   if (!Userfront.accessToken()) {
+  //     return (
+  //       <Redirect
+  //         to={{
+  //           pathname: "/log-in",
+  //           state: { from: location },
+  //         }}
+  //       />
+  //     );
+  //   }
 
 const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -65,10 +84,6 @@ useEffect(() => {
             <video className="video" poster={videoPoster} controls autostart autoPlay={false} src={video} type="video/mp4" />
         </div>
       </section>
-
-
-
-
       <section className={"container--outer outer--black section--three"}>
         <div className={"container--inner inner--black"}>
  <          div className="circle--one"></div>
@@ -280,10 +295,8 @@ useEffect(() => {
       <footer>
         <span>Copyright © 2023 IBM</span> 
       </footer>
-    
+   
     </div>)
 };
-
-
 
 export default HomePage
