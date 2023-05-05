@@ -242,7 +242,7 @@ useEffect(() => {
                <li>
                 <img className="profile-pic" src={persona2} />
                 <div className={"quote-text"}>
-                <span className={"bold"}>“One of the best API management tool”</span>
+                <span className={"bold"}>“One of the best API management tools”</span>
                 <div>Senior System Engineer</div>
                 </div>
               </li>
