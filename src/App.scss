@@ -71,18 +71,23 @@ html {
 }
 
 footer {
-  height:  100px;
+  height:  300px;
   width:  100%;
   background-color:  black;
+  color:  white;
+  display:  flex;
+  justify-content:  left;
+  padding:  56px;
+  align-items:  flex-end;
 }
 
 
 h1 {
   font-family: IBM Plex Mono;
-  font-size: 48px;
+  font-size: 46px;
   font-weight: 600;
   line-height: 76px;
-  letter-spacing: -4px;
+  /*letter-spacing: -4px;*/
   margin-top:  64px;
 }
 
@@ -94,14 +99,13 @@ h2 {
   letter-spacing: 0px;
 }
 
-h3 {
-  font-family: IBM Plex Mono;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 46px;
-  text-align: left;
+.section--white_h3 {
   max-width:  400px;
   margin-bottom:  28px;
+  font-family: IBM Plex Mono;
+  font-size: 30px;
+  font-weight: 400;
+  line-height:  42px;
 }
 
 .intro-p {
@@ -330,7 +334,6 @@ h3 {
   transition:  .25s ease-in ;
 }
 
-
 .isVisible {
   opacity:  1;
 }
@@ -345,19 +348,17 @@ h3 {
   padding-bottom:  180px;
 }
 
-
-
 .section--eight {
   position:  relative;
   overflow:  hidden;
 }
-
 
 .section--seven {
   position:  relative;
   overflow:  visible;
   z-index:  5;
 }
+
 .z-index-6 {
   z-index:  6;
 }
