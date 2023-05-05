@@ -87,11 +87,10 @@ useEffect(() => {
         <div className={"container--inner inner--gray"}>
           <div className={"col--40"}>
 
-            <h3 className={`section--white_h3 section--appear ${scrollPosition > 1869 ? "isVisible" : ""}`}>Supports all the modern API types</h3>
+            <h3 className={`section--white_h3 section--appear ${scrollPosition > 1450 ? "isVisible" : ""}`}>Supports all the modern API types</h3>
             
-            <div className={`section--appear ${scrollPosition > 1919 ? "isVisible" : ""}`}>
-            <p className="feature-text-p">Creating an API requires expertise, especially with emerging API types.</p>
-           <p className="feature-text-p">To minimize entry barriers, we:</p>
+            <div className={`section--appear ${scrollPosition > 1550 ? "isVisible" : ""}`}>
+            <p className="feature-text-p">Creating an API requires expertise, especially with emerging API types.  To minimize entry barriers, we:</p>
               <ul className="feature-bullet-list">
                 <li>Created built-in templates to rapidly 
                 create, test and deploy APIs</li>
@@ -117,10 +116,9 @@ useEffect(() => {
             <img className="hero-image" src={assembly} />
           </div>
           <div className={"col--40 text--col--right"}>
-            <h3 className={` section--white_h3 wrap-title-text section--appear ${scrollPosition > 2440 ? "isVisible" : ""} `}>Simplified development loop</h3>
-            <div className={`section--appear ${scrollPosition > 2490 ? "isVisible" : ""}`}>
-            <p className="feature-text-p">Today, software developers need to juggle between separate API editing and testing tools.</p>
-             <p className="feature-text-p"> To address this, we:</p>
+            <h3 className={` section--white_h3 wrap-title-text section--appear ${scrollPosition > 2000 ? "isVisible" : ""} `}>Simplified development loop</h3>
+            <div className={`section--appear ${scrollPosition > 2100 ? "isVisible" : ""}`}>
+            <p className="feature-text-p">Today, software developers need to juggle between separate API editing and testing tools. To address this, we:</p>
             <ul className="feature-bullet-list">
               <li>Consolidated building and testing into a single user interface</li>
               <li>Designed effortless visual debugging tools to isolate and remedy errors</li>
@@ -138,9 +136,9 @@ useEffect(() => {
                 <div className={"circle--four"}></div>
 
           <div className={"col--40"}>
-            <h3 className={` section--white_h3 wrap-title-text section--appear ${scrollPosition > 3180 ? "isVisible" : ""} `}>Automate testing with Watson AI</h3>
-            <div className={`section--appear ${scrollPosition > 3230 ? "isVisible" : ""}`} >
-            <p className="feature-text-p">Writing tests is tedious and time-consuming but necessary to ensure services stay up and running.</p>  <p className="feature-text-p">We leveraged AI solution to:</p>
+            <h3 className={` section--white_h3 wrap-title-text section--appear ${scrollPosition > 2800 ? "isVisible" : ""} `}>Automate testing with Watson AI</h3>
+            <div className={`section--appear ${scrollPosition > 2900 ? "isVisible" : ""}`} >
+            <p className="feature-text-p">Writing tests is tedious and time-consuming but necessary to ensure services stay up and running.  We leveraged Watson AI to:</p>
             <ul className="feature-bullet-list">
               <li>Use machine learning to automate API testing with 100% test coverage</li>
               <li>Evaluate data to identify testing gaps from real use cases</li>
@@ -166,14 +164,13 @@ useEffect(() => {
           </div>
 
           <div className={"col--40 text--col--right"}>
-            <h3 className={`section--white_h3 section--appear ${scrollPosition > 3982 ? "isVisible" : ""} `}>Monitor APIs with ease</h3>
+            <h3 className={`section--white_h3 section--appear ${scrollPosition > 3600 ? "isVisible" : ""} `}>Monitor APIs with ease</h3>
 
-            <div className={`section--appear ${scrollPosition > 4032 ? "isVisible" : ""} `}>
-              <p className="feature-text-p">Monitoring crucial API data is frustrating when it’s scattered across different sources.</p>
-              <p className="feature-text-p">To address this, we:</p>
+            <div className={`section--appear ${scrollPosition > 3700 ? "isVisible" : ""} `}>
+              <p className="feature-text-p">Monitoring crucial API data is frustrating when it’s scattered across different sources.  To address this, we:</p>
               <ul className="feature-bullet-list">
                 <li>Organized significant metrics into a curated dashboard</li>
-                <li>Highlighted trends so potential insights are not left undiscovere</li>
+                <li>Highlighted trends so potential insights are not left undiscovered</li>
               </ul>
             </div>
             </div> 
@@ -188,13 +185,12 @@ useEffect(() => {
         <div className={"circle--seven"}></div>
           <div className={"col--40"}>
         
-              <h3 className={`section--white_h3 section--appear ${scrollPosition > 4649 ? "isVisible" : ""}`}>All in one place</h3>
+              <h3 className={`section--white_h3 section--appear ${scrollPosition > 4200 ? "isVisible" : ""}`}>All in one place</h3>
 
-                <div className={`section--appear ${scrollPosition > 4699 ? "isVisible" : ""} `}>
-              <p className="feature-text-p">It’s incredibly challenging to find or reuse assets across integration portfolio.</p>
-              <p className="feature-text-p">To address this, we:</p>
+                <div className={`section--appear ${scrollPosition > 4300 ? "isVisible" : ""} `}>
+              <p className="feature-text-p">It’s incredibly challenging to find or reuse assets across integration portfolio.  To address this, we:</p>
               <ul className="feature-bullet-list">
-                <li>Designed a visually engaging lightweight portal that allows Application developers to discover APIs and other integration assets</li>
+                <li>Designed a visually engaging and lightweight portal that allows Application developers to discover APIs and other integration assets</li>
                 <li>Organized content that inspire users to continue innovating without duplicating work</li>
               </ul>
               </div>
