@@ -17,10 +17,10 @@ html {
 .container--inner {
   max-width:  1312px;
   display:  flex;
-  margin-left: 0  auto;
-
-  /*padding:  100px 50px 80px 50px;*/
-  padding:  100px 50px 150px 50px;
+  margin-left:  auto;
+  margin-right:  auto;
+  padding:  100px 50px 80px 50px;
+  /*padding:  100px 50px 150px 50px;*/
 
 }
 
@@ -87,7 +87,7 @@ h1 {
   font-size: 46px;
   font-weight: 600;
   line-height: 76px;
-  /*letter-spacing: -4px;
+  /*letter-spacing: -4px;*/
   margin-top:  64px;
 }
 
@@ -362,4 +362,3 @@ h2 {
 .z-index-6 {
   z-index:  6;
 }
-
