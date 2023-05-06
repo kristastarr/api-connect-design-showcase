@@ -31,7 +31,7 @@ const LogoutButton = Userfront.build({
               <Link to="/login">Log in</Link>
             </li>
             <li>
-              <Link to="/dashboard">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li><button onClick={Userfront.logout}>Logout</button></li>
           </ul>
@@ -44,7 +44,7 @@ const LogoutButton = Userfront.build({
           <Route path="/login"
            element={<Login/>}>
           </Route>
-          <Route path="/dashboard"
+          <Route path="/"
             element={<Dashboard />}>
           </Route>
         </Routes>
