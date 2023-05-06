@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link, Redirect, Navigate } from "react-router-dom";
+import { BrowserRouter as HashRouter, Routes, Route, Link, Navigate } from "react-router-dom";
 import Userfront from "@userfront/react";
 import HomePage from './pages/HomePage'
 
@@ -20,7 +20,7 @@ const LogoutButton = Userfront.build({
 });
 
   return (
-    <Router>
+    <HashRouter>
 
         <nav>
           <ul>
@@ -31,7 +31,7 @@ const LogoutButton = Userfront.build({
               <Link to="/login">Log in</Link>
             </li>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/dashboard">Home</Link>
             </li>
             <li><button onClick={Userfront.logout}>Logout</button></li>
           </ul>
@@ -44,12 +44,12 @@ const LogoutButton = Userfront.build({
           <Route path="/login"
            element={<Login/>}>
           </Route>
-          <Route path="/"
+          <Route path="/dashboard"
             element={<Dashboard />}>
           </Route>
         </Routes>
 
-    </Router>
+    </HashRouter>
   );
 
 function SignUp() {
