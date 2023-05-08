@@ -225,6 +225,11 @@ h2 {
   margin-bottom:  50px;
 }
 
+.LoopLottie {
+  width:  400px;
+  margin-bottom:  64px;
+}
+
 .logos-grid {
   width:  99%;
   display:  flex;
@@ -361,4 +366,10 @@ h2 {
 
 .z-index-6 {
   z-index:  6;
+}
+
+
+.HeroLottie {
+  transform:  translateY(4px);
+  z-index:  -1;
 }
