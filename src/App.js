@@ -1,5 +1,7 @@
 import './App.scss';
 import React, { useState, useEffect } from 'react';
+import Lottie from "lottie-react";
+
 
 import aiTest from './images/aiTest.png';
 import analytics from './images/analytics.png';
@@ -22,7 +24,8 @@ import video from './images/video.mp4';
 import videoPoster from './images/video-poster.png';
 import HeroSvg from './components/HeroSvg';
 
-
+import HeroAnimation from './lotties/hero-animation.json'
+import LoopAnimation from './lotties/loop-animation.json'
 
 function App() {
 
@@ -52,7 +55,8 @@ useEffect(() => {
             <h2 className="title--span">in Cloud Pak for Integration</h2>
           </div>
           <div className="col--60"> 
-            <HeroSvg />
+            {/*<HeroSvg />*/}
+            <Lottie animationData={HeroAnimation} loop={false} className={"HeroLottie"} />
           </div>
         </div>
       </header>
@@ -213,7 +217,8 @@ useEffect(() => {
           </div>
           <div className="col--60">
             
-                   <img className={"loop-img"} src={loop} /> 
+                   {/*<img className={"loop-img"} src={loop} /> */}
+                   <Lottie className={"LoopLottie"} animationData={LoopAnimation} loop={true} />
       
 
               <p className={"conclusion-p"}>During our research and design process, we developed domain knowledge about the complexities of APIs in a world that is increasingly reliant on them.</p> 
