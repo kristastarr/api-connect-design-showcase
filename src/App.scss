@@ -329,3 +329,8 @@ footer {
   padding:  56px;
   align-items:  flex-end;
 }
+
+
+@media (prefers-reduced-motion) { 
+ .section--appear { opacity: 1; transition: none }
+}

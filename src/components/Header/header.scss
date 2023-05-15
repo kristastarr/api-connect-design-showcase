@@ -1,0 +1,7 @@
+.hero-image__container { display: none }
+.hero_lottie { display: block } 
+
+@media (prefers-reduced-motion) { 
+ .hero-image__container { display: block }
+ .hero_lottie { display: none } 
+}
