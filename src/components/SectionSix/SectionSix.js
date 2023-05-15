@@ -20,7 +20,7 @@ const SectionSix = () => {
           </div>
         </div>  
         <div className="col--60 z-index-6">
-          <img className="ai-test-image" src={aiTest} /> 
+          <img className="ai-test-image" src={aiTest} alt="screen showing list of API tests, and Watson insights recommendations"/> 
         </div>
       </div>
     </section>

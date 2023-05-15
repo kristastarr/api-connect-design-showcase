@@ -22,7 +22,7 @@ const SectionFour = () => {
           </div> 
         </div> 
         <div className="col--60">
-          <img className="api-creation-image" src={apiCreation} />
+          <img className="api-creation-image" src={apiCreation} alt="laptop screen showing list of six different API types"/>
         </div>
       </div>
     </section>

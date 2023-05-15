@@ -1,0 +1,7 @@
+.loop-img__container { display: none }
+.loop--lottie { display: block } 
+
+@media (prefers-reduced-motion) {  
+ .loop-img__container { display: block }
+ .loop--lottie { display: none } 
+} 

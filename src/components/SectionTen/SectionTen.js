@@ -25,28 +25,28 @@ const SectionTen = () => {
         <div className="col--60">
           <ul className={`quotes-list section--appear ${scrollPosition > 5850 ? "isVisible" : ""}`}>
             <li>
-              <img className="profile-pic" src={persona1} />
+              <img className="profile-pic" src={persona1} alt="profile pic of an integration developer"/>
               <div className="quote-text">
                 <span className="bold">“Very powerful and professional API solution with a great interface”</span>
                 <div>Integration Developer</div>
               </div>
             </li>
              <li>
-              <img className="profile-pic" src={persona2} />
+              <img className="profile-pic" src={persona2} alt="profile pic of a senior system engineer"/>
               <div className="quote-text">
                 <span className="bold">“One of the best API management tools”</span>
                 <div>Senior System Engineer</div>
               </div>
             </li>
             <li>
-              <img className="profile-pic" src={persona3} />
+              <img className="profile-pic" src={persona3} alt="profile pic of a technical support engineer"/>
               <div className="quote-text">
                 <span className="bold">“Robust tool for API lifecycle management”</span>
                 <div>Technical Support Engineer</div>
               </div>
             </li>
             <li>
-              <img className="profile-pic" src={persona4} />
+              <img className="profile-pic" src={persona4} alt="Gartner Magic Quadrant logo"/>
               <div className="quote-text">
                 <span className="bold">“A leader for full life cycle API management”</span>
                 <div>Gartner Magic Quadrant report</div>
@@ -54,12 +54,12 @@ const SectionTen = () => {
             </li>
           </ul>
           <ul className={`logos-grid section--appear ${scrollPosition > 5880 ? "isVisible" : ""}`}>
-            <li className="logo"><img className="logo-img" src={logoAetna}/></li>
-            <li className="logo"><img className="logo-img" src={logoCitibank}/></li>
-            <li className="logo"><img className="logo-img" src={logoCoach}/></li>
-            <li className="logo"><img className="logo-image--kaiser" src={logoKaiser}/></li>
-            <li className="logo"><img className="logo-image--nb" src={logoNb}/></li>
-            <li className="logo"><img className="logo-img" src={logoToyota}/></li>
+            <li className="logo"><img className="logo-img" src={logoAetna} alt="Aetna" /></li>
+            <li className="logo"><img className="logo-img" src={logoCitibank} alt="Citibank"/></li>
+            <li className="logo"><img className="logo-img" src={logoCoach} alt="Coach"/></li>
+            <li className="logo"><img className="logo-image--kaiser" src={logoKaiser} alt="Kaiser Permanente"/></li>
+            <li className="logo"><img className="logo-image--nb" src={logoNb} alt="New Balance" /></li>
+            <li className="logo"><img className="logo-img" src={logoToyota} alt="Toyota" /></li>
           </ul>
         </div>
       </div>
