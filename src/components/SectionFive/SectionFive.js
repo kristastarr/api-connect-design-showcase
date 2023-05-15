@@ -9,7 +9,7 @@ const SectionFive = () => {
     <div className="container--inner inner--gray">
       <div className="circle circle--three"></div>
       <div className="col--60">
-        <img className="hero-image" src={assembly} />
+        <img className="hero-image" src={assembly} alt="screen showing testing and debugging capabilities on one integrated interface"/>
       </div>
       <div className="col--40 text--col--right">
         <h3 className={`section--white_h3 wrap-title-text section--appear ${scrollPosition > 2000 ? "isVisible" : ""} `}>Simplified development loop</h3>

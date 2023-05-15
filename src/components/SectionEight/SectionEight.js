@@ -19,7 +19,7 @@ const SectionEight = () => {
           </div>
         </div>
         <div className="col--60 col--image z-index-6">
-          <img className="api-creation-image" src={apiCatalog} />
+          <img className="api-creation-image" src={apiCatalog} alt="laptop screen showing an API Catalog with nine different APIs to browse"/>
         </div>
       </div>
     </section>
