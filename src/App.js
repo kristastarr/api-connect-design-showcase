@@ -12,12 +12,14 @@ import SectionEight from './components/SectionEight'
 import SectionNine from './components/SectionNine'
 import SectionTen from './components/SectionTen'
 
+import pdf from './pdfs/api-connect.pdf'
+
 function App() {
   return (
     <div className="App">
-     <Header />
+      <Header />
       <main>
-        <SectionTwo />
+        <SectionTwo  />
         <SectionThree />
         <SectionFour />
         <SectionFive />
@@ -26,9 +28,14 @@ function App() {
         <SectionEight />
         <SectionNine />
         <SectionTen />
-      </main>
+        </main>
       <footer>
-        <span>Copyright © 2023 IBM</span> 
+        <div className="footer-container">
+          <span>Copyright © 2023 IBM</span> 
+          <div class="download-button-container">
+            <a href={pdf} download="ApiConnect" class="download-button" >Download pdf</a>
+        </div>
+        </div>
       </footer>    
     </div>
   )
