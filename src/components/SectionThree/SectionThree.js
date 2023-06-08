@@ -1,9 +1,10 @@
 import React from 'react';
 
-const SectionSeven = () => {
+const SectionThree = () => {
+
 	return (   
    <section className="container--outer outer--black section--three">
-      <div className="container--inner inner--black">
+      <div className="container--inner inner--black inner--three">
         <div className="circle circle--one"></div>
         <div className="circle circle--two"></div> 
         <div className="col--40">
@@ -19,4 +20,4 @@ const SectionSeven = () => {
   )
 }
 
-export default SectionSeven
+export default SectionThree
