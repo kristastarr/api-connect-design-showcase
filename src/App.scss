@@ -1,3 +1,45 @@
+header {
+  border: 1px solid black;
+}
+
+main {
+  border: 1px solid black;
+}
+
+footer {
+  border: 1px solid black;
+}
+
+
+.section--three {
+  border: 1px solid black;
+}
+
+.section--four {
+  border: 1px solid #F2F4F8;
+}
+
+.parallax-one {
+  border: 1px solid black;
+}
+
+.Sticky {
+  position: fixed;
+  width: 100%;
+  border: 1px solid black;
+  transform: translateX(-1px);
+  margin-top: -1100px;
+  /* z-index: -1; */
+}
+
+.Overlapping {
+  z-index: 2;
+  position: relative;
+  margin-top: 1100px;
+}
+
+/////////////////////////////////////////
+
 html {
   background-color:  black;
 }
@@ -97,7 +139,6 @@ h2 {
   margin-left:  auto;
   margin-right:  auto;
 }
-
 
 .intro-p {
   font-family: IBM Plex Sans;
