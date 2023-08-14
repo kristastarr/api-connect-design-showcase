@@ -7,7 +7,7 @@ const SectionEight = () => {
 	return (   
     <section className="container--outer outer--gray section--eight">
       <div className="container--inner inner--gray">
-        <div className="circle circle--seven"></div>
+        <div className="circle circle--seven" style={{ marginTop: `${1100 + scrollPosition * -.35}px`}}></div>
         <div className="col--40">
           <h3 className={`section--white_h3 section--appear ${scrollPosition > 4200 ? "isVisible" : ""}`}>All in one place</h3>
           <div className={`section--appear ${scrollPosition > 4300 ? "isVisible" : ""} `}>

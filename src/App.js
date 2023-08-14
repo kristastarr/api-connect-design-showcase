@@ -1,5 +1,6 @@
 import './App.scss';
 import React, { useState } from 'react';
+import  useScrollPosition  from "./utils/useScrollPosition";
 
 import Header from './components/Header'
 import SectionTwo from './components/SectionTwo'
@@ -16,38 +17,21 @@ import pdf from './pdfs/api-connect.pdf'
 
 function App() {
 
-  const [overlap, setOverlap ] = useState(false);
-
-  const handleScroll = () => {
-    if (window.scrollY > 1100 ) {
-      setOverlap(true)
-    }
-    else {
-      setOverlap(false)
-    }
-  }
-
-  window.addEventListener("scroll", handleScroll);
+  let scrollPosition = useScrollPosition()
 
   return (
-    <div className="App">
+    <div className="App" style={{ top: `${ (scrollPosition * -.3)}px`}}>
       <Header />
       <main>
-        <div className="parallax-one">
-          <div className={ overlap ? "Sticky" : ""}> 
-              <SectionTwo  />
-              <SectionThree />
-          </div>
-        </div>
-        <div class={ overlap ? "Overlapping" : ""}>  
-            <SectionFour />
-            <SectionFive />
-            <SectionSix />
-            <SectionSeven />
-            <SectionEight />
-            <SectionNine />
-            <SectionTen /> 
-        </div>
+        <SectionTwo  />
+        <SectionThree />
+        <SectionFour />
+        <SectionFive />
+       <SectionSix />
+        <SectionSeven />
+        <SectionEight />
+        <SectionNine />
+        <SectionTen /> 
       </main>
       <footer>
         <div className="footer-container">
@@ -56,8 +40,8 @@ function App() {
             <a href={pdf} download="IBM API Connect Design Showcase 2023" class="download-button" >Download pdf</a>
           </div>
         </div>
-      </footer>              
-    </div> 
+      </footer>  
+    </div>     
   )
 };
 

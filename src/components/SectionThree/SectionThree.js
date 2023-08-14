@@ -1,6 +1,8 @@
 import React from 'react';
+import  useScrollPosition  from "../../utils/useScrollPosition";
 
 const SectionThree = () => {
+  let scrollPosition = useScrollPosition()
 
 	return (   
    <section className="container--outer outer--black section--three">
