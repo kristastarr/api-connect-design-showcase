@@ -18,9 +18,7 @@ import pdf from './pdfs/api-connect.pdf'
 function App() {
 
   let scrollPosition = useScrollPosition()
-  let prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: true)')
-  console.log(prefersReducedMotion)
-
+ 
   return (
     <div className="App" style={{ top: `${ (scrollPosition * -.3)}px`}}>
       <Header />
