@@ -20,10 +20,10 @@ const SectionTen = () => {
     <section className={"container--outer outer--black section--ten"}>
       <div className={"container--inner inner--black"}>
         <div className={"col--40"}>
-           <h3 className={`section--black_h3 section--appear ${scrollPosition > 5800 ? "isVisible" : ""}`}>Customers love us!</h3>
+           <h3 className={`section--black_h3 section--appear ${scrollPosition > 5750 ? "isVisible" : ""}`}>Customers love us!</h3>
         </div>
         <div className="col--60">
-          <ul className={`quotes-list section--appear ${scrollPosition > 5850 ? "isVisible" : ""}`}>
+          <ul className={`quotes-list section--appear ${scrollPosition > 5900 ? "isVisible" : ""}`}>
             <li>
               <img className="profile-pic" src={persona1} alt="profile pic of an integration developer"/>
               <div className="quote-text">

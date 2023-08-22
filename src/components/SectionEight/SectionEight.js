@@ -3,11 +3,13 @@ import apiCatalog from '../../images/apiCatalog.png';
 import  useScrollPosition  from "../../utils/useScrollPosition";
 
 const SectionEight = () => {
-  let scrollPosition = useScrollPosition()
+
+  let scrollPosition = useScrollPosition();
+
 	return (   
     <section className="container--outer outer--gray section--eight">
       <div className="container--inner inner--gray">
-        <div className="circle circle--seven"></div>
+        <div className="circle circle--seven" style={{ marginTop: `${1170 + scrollPosition * -.35}px`}}></div>
         <div className="col--40">
           <h3 className={`section--white_h3 section--appear ${scrollPosition > 4200 ? "isVisible" : ""}`}>All in one place</h3>
           <div className={`section--appear ${scrollPosition > 4300 ? "isVisible" : ""} `}>
@@ -18,7 +20,7 @@ const SectionEight = () => {
             </ul>
           </div>
         </div>
-        <div className="col--60 col--image z-index-6">
+        <div className="col--60 col--image">
           <img className="api-creation-image" src={apiCatalog} alt="laptop screen showing an API Catalog with nine different APIs to browse"/>
         </div>
       </div>
@@ -26,4 +28,4 @@ const SectionEight = () => {
   )
 }
 
-export default SectionEight
+export default SectionEight;

@@ -1,45 +1,3 @@
-header {
-  border: 1px solid black;
-}
-
-main {
-  border: 1px solid black;
-}
-
-footer {
-  border: 1px solid black;
-}
-
-
-.section--three {
-  border: 1px solid black;
-}
-
-.section--four {
-  border: 1px solid #F2F4F8;
-}
-
-.parallax-one {
-  border: 1px solid black;
-}
-
-.Sticky {
-  position: fixed;
-  width: 100%;
-  border: 1px solid black;
-  transform: translateX(-1px);
-  margin-top: -1100px;
-  /* z-index: -1; */
-}
-
-.Overlapping {
-  z-index: 2;
-  position: relative;
-  margin-top: 1100px;
-}
-
-/////////////////////////////////////////
-
 html {
   background-color:  black;
 }
@@ -72,10 +30,12 @@ html {
   width:  40%;
   height:  500px;
   padding-top:  56px;
+  z-index: 2;
 }
 
 .col--60 {
   width:  60%;
+  z-index: 2;
 }
 
 .section--black_h3 {
@@ -123,7 +83,6 @@ h2 {
 
 .hero__lottie {
   transform:  translateY(4px);
-  z-index:  -1;
 }
 
 .container--inner--video {
@@ -138,6 +97,7 @@ h2 {
   width:  70%;
   margin-left:  auto;
   margin-right:  auto;
+  position: relative;
 }
 
 .intro-p {
@@ -151,7 +111,8 @@ h2 {
 
 .section--appear {
   opacity:  0;
-  transition:  .25s ease-in ;
+  transition:  .25s ease-in;
+  z-index: 3;
 }
 
 .isVisible {
@@ -171,18 +132,22 @@ h2 {
   width:  100%;
 }
 
-.col--60,
 .section--four {
   position:  static;
-  z-index:  2;
+}
+
+.section--three {
+  z-index: 4;
+  position: relative;
+}
+
+.inner--three {
+  position: relative;
+  overflow: hidden;
 }
 
 .bold {
   font-weight:  600;
-}
-
-.z-index-6 {
-  z-index:  6;
 }
 
 .feature-text-p {
@@ -232,6 +197,7 @@ h2 {
   height:  430px;
   border-radius:  50%;
   position:  absolute;
+  opacity: .35;
 }
 
 .circle--one {
@@ -239,6 +205,7 @@ h2 {
   position:  absolute;
   transform:  translate(215%, -20%);
   opacity:  0.1;
+  transition-timing-function: ease-in;
 }
 
 .circle--two { 
@@ -269,22 +236,21 @@ h2 {
 
 .circle--seven {
   background-color:  #d0e2ff;
-  transform:  translate(230%, 70%);
+  transform:  translate(10%, 70%);
 }
-
+.overflow-hidden {
+  overflow: hidden;
+}
 .section--seven {
-  position:  relative;
   overflow:  visible;
-  z-index:  5;
 }
 
 .section--eight {
-  position:  relative;
   overflow:  hidden;
 }
 
 .outer--loop {
-    background-color:  #121619;
+  background-color:  #121619;
 }
 
 .inner--loop {
