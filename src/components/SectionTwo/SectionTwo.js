@@ -2,8 +2,6 @@ import React from 'react';
 
 import video from '../../images/video.mp4';
 import videoPoster from '../../images/video-poster.png';
-import  useScrollPosition  from "../../utils/useScrollPosition";
-
 
 const SectionTwo = () => {
 

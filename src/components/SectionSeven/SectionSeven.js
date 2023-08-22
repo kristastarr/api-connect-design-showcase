@@ -3,12 +3,13 @@ import analytics from '../../images/analytics.png';
 import  useScrollPosition  from "../../utils/useScrollPosition";
 
 const SectionSeven = () => {
-  let scrollPosition = useScrollPosition()
+
+  let scrollPosition = useScrollPosition();
 
 	return (   
     <section className="container--outer outer--gray section--seven">
       <div className="container--inner inner--white">
-        <div className="circle circle--five" style={{ marginTop: `${( 400 + scrollPosition * -.35)}px`}}></div>
+        <div className="circle circle--five" style={{ marginTop: `${( 625 + scrollPosition * -.35)}px`}}></div>
         <div className="col--60 col--gray">
           <img className="hero-image" src={analytics} alt="screen showing a robust monitoring dashboard with four graphs and statistics"/>
         </div>
@@ -22,10 +23,10 @@ const SectionSeven = () => {
             </ul>
           </div>
         </div> 
-        <div className="circle circle--six" style={{ marginTop: `${ 650 + scrollPosition * -.35}px`}}></div>
+        <div className="circle circle--six" style={{ marginTop: `${ 820 + scrollPosition * -.35}px`}}></div>
       </div>
     </section>
   )
 }
 
-export default SectionSeven
+export default SectionSeven;

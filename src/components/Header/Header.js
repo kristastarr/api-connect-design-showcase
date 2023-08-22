@@ -9,7 +9,6 @@ import HeroAnimation from '../../lotties/hero-animation.json'
 
 const Header = () => {
   let scrollPosition = useScrollPosition()
-  // style={{ top: `${(scrollPosition * -.5)}px`}}
 
 	return (
     <header className="container--outer outer--black section--one">
