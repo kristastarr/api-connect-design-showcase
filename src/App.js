@@ -1,5 +1,5 @@
 import './App.scss';
-import React, { useState } from 'react';
+import React from 'react';
 import  useScrollPosition  from "./utils/useScrollPosition";
 
 import Header from './components/Header'
@@ -18,19 +18,22 @@ import pdf from './pdfs/api-connect.pdf'
 function App() {
 
   let scrollPosition = useScrollPosition()
+  let prefersReducedMotion = window.matchMedia(
+    `(prefers-reduced-motion: reduce)`
+  ).matches;
  
   return (
-    <div className="App" style={{ top: `${ (scrollPosition * -.3)}px`}}>
-      <Header />
+    <div className="App">
+      <Header prefersReducedMotion={prefersReducedMotion} />
       <main>
         <SectionTwo  />
         <SectionThree />
         <SectionFour />
-        <SectionFive />
-        <SectionSix />
-        <SectionSeven />
-        <SectionEight />
-        <SectionNine />
+        <SectionFive prefersReducedMotion={prefersReducedMotion} />
+        <SectionSix prefersReducedMotion={prefersReducedMotion}/>
+        <SectionSeven prefersReducedMotion={prefersReducedMotion} />
+        <SectionEight prefersReducedMotion={prefersReducedMotion} />
+        <SectionNine prefersReducedMotion={prefersReducedMotion} />
         <SectionTen /> 
       </main>
       <footer>

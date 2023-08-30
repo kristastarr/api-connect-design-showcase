@@ -56,7 +56,7 @@ html {
 }
 
 .container--inner--header {
-  max-width:  1412px;
+  max-width:  1412px; 
   display:  flex;
   margin-left:  auto;
   margin-right:  auto;
@@ -85,11 +85,14 @@ h2 {
   transform:  translateY(4px);
 }
 
+.front > * {
+  z-index: 1000;
+}
+
 .container--inner--video {
   max-width:  1312px;
   display:  flex;
-  margin-left:  auto;
-  margin-right:  auto;
+  margin: -4px auto auto auto;
   padding:  0 50px 100px 50px;
 }
 
@@ -132,18 +135,10 @@ h2 {
   width:  100%;
 }
 
-.section--four {
-  position:  static;
-}
-
 .section--three {
   z-index: 4;
   position: relative;
-}
-
-.inner--three {
-  position: relative;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .bold {
@@ -238,17 +233,15 @@ h2 {
   background-color:  #d0e2ff;
   transform:  translate(10%, 70%);
 }
-.overflow-hidden {
-  overflow: hidden;
-}
+
 .section--seven {
   overflow:  visible;
 }
 
-.section--eight {
-  overflow:  hidden;
+.section--nine {
+  z-index: 5;
+  position:relative
 }
-
 .outer--loop {
   background-color:  #121619;
 }
@@ -260,14 +253,14 @@ h2 {
   padding-bottom:  180px;
 }
 
-.loop-img {
-  width:  320px;
-  margin-bottom:  50px;
+.loop--lottie {
+  width: 400px;
+  margin-bottom:  64px; 
 }
 
-.loop--lottie {
-  width:  400px;
-  margin-bottom:  64px;
+.loop-img {
+  width:  320px;
+  margin-bottom:  64px; 
 }
 
 .profile-pic {
