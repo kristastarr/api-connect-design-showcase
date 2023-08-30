@@ -2,14 +2,14 @@ import React from 'react';
 import assembly from '../../images/assembly.png';
 import  useScrollPosition  from "../../utils/useScrollPosition";
 
-const SectionFive = () => {
+const SectionFive = (props) => {
   
-  let scrollPosition = useScrollPosition();
- 
+  let scrollPosition = useScrollPosition(props);
+
 	return (   
     <section className="container--outer outer--gray section--five">
-      <div className="container--inner inner--gray  overflow-hidden">
-        <div className="circle circle--three" style={{ marginTop: `${(scrollPosition * -.35)}px`}}></div>
+      <div className="container--inner inner--gray ">
+        <div className="circle circle--three" style={ !props.prefersReducedMotion ? { marginTop: `${(scrollPosition * -.35)}px`} : null }></div>
         <div className="col--60">
           <img className="hero-image" src={assembly} alt="screen showing testing and debugging capabilities on one integrated interface"/>
         </div>
@@ -29,3 +29,4 @@ const SectionFive = () => {
 }
 
 export default SectionFive;
+
