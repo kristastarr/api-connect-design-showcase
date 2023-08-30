@@ -238,10 +238,10 @@ h2 {
   overflow:  visible;
 }
 
-.section--eight {
-  overflow:  hidden;
+.section--nine {
+  z-index: 5;
+  position:relative
 }
-
 .outer--loop {
   background-color:  #121619;
 }
