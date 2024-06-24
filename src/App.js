@@ -38,7 +38,7 @@ function App() {
       </main>
       <footer>
         <div className="footer-container">
-          <span>Copyright © 2023 IBM</span> 
+          <span>Copyright © 2024 IBM</span> 
           <div class="download-button-container">
             <a href={pdf} download="IBM API Connect Design Showcase 2023" class="download-button" >Download pdf</a>
           </div>
