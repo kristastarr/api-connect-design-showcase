@@ -11,7 +11,7 @@ const SectionSix = (props) => {
         <div className="container--inner inner--gray">
           <div className="circle circle--four" style={ !props.prefersReducedMotion ? { marginTop: `${( 360 + scrollPosition * -.35)}px`} : null }></div>
           <div className="col--40">
-              <h3 className={`section--white_h3 wrap-title-text section--appear ${scrollPosition > 2800 ? "isVisible" : ""} `}>Automate testing with Watson AI</h3>
+              <h3 className={`section--white_h3 wrap-title-text section--appear ${scrollPosition > 2800 ? "isVisible" : ""} `}>Automate testing with watsonx.ai</h3>
               <div className={`section--appear ${scrollPosition > 3200 ? "isVisible" : ""}`}>
                 <p className="feature-text-p">Writing tests is tedious and time-consuming but necessary to ensure services stay up and running.  We leveraged Watson AI to:</p>
                 <ul className="feature-bullet-list">

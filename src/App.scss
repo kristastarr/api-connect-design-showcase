@@ -2,6 +2,13 @@ html {
   background-color:  black;
 }
 
+#root {
+  width: 100%;
+  position: relative;
+  left: 0;
+  overflow: hidden;
+}
+
 .container--outer {
   width: 100%;
 }
@@ -138,7 +145,7 @@ h2 {
 .section--three {
   z-index: 4;
   position: relative;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .bold {
@@ -191,7 +198,7 @@ h2 {
   width:  430px;
   height:  430px;
   border-radius:  50%;
-  position:  absolute;
+  position: absolute;
   opacity: .35;
 }
 
@@ -240,7 +247,7 @@ h2 {
 
 .section--nine {
   z-index: 5;
-  position:relative
+  position: relative;
 }
 .outer--loop {
   background-color:  #121619;
@@ -332,9 +339,12 @@ footer {
 
 .footer-container {
   width: 100%;
+  max-width: 1312px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left:  auto;
+  margin-right:  auto;
 }
 
 .download-button-container,
@@ -383,3 +393,5 @@ footer {
 @media (prefers-reduced-motion) { 
  .section--appear { opacity: 1; transition: none }
 }
+
+
