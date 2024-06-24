@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/api-connect-design-showcase/static/css/main.1db6aedb.css",
-    "main.js": "/api-connect-design-showcase/static/js/main.44470b62.js",
+    "main.css": "/api-connect-design-showcase/static/css/main.2e952e02.css",
+    "main.js": "/api-connect-design-showcase/static/js/main.ca2a8e6a.js",
     "static/media/video.mp4": "/api-connect-design-showcase/static/media/video.f892dd9db3faa2fb07cc.mp4",
     "static/media/api-connect.pdf": "/api-connect-design-showcase/static/media/api-connect.347f7551be49d91c314b.pdf",
     "static/media/video-poster.png": "/api-connect-design-showcase/static/media/video-poster.6296f4b9f8bc069dada4.png",
@@ -194,11 +194,11 @@
     "static/media/IBMPlexMono-Light-Latin3.woff2": "/api-connect-design-showcase/static/media/IBMPlexMono-Light-Latin3.8a014da16bb5df1e9830.woff2",
     "static/media/IBMPlexMono-Regular-Latin3.woff2": "/api-connect-design-showcase/static/media/IBMPlexMono-Regular-Latin3.cacfd1d7dbd14067b970.woff2",
     "index.html": "/api-connect-design-showcase/index.html",
-    "main.1db6aedb.css.map": "/api-connect-design-showcase/static/css/main.1db6aedb.css.map",
-    "main.44470b62.js.map": "/api-connect-design-showcase/static/js/main.44470b62.js.map"
+    "main.2e952e02.css.map": "/api-connect-design-showcase/static/css/main.2e952e02.css.map",
+    "main.ca2a8e6a.js.map": "/api-connect-design-showcase/static/js/main.ca2a8e6a.js.map"
   },
   "entrypoints": [
-    "static/css/main.1db6aedb.css",
-    "static/js/main.44470b62.js"
+    "static/css/main.2e952e02.css",
+    "static/js/main.ca2a8e6a.js"
   ]
 }
