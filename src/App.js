@@ -1,6 +1,5 @@
 import './App.scss';
 import React from 'react';
-import  useScrollPosition  from "./utils/useScrollPosition";
 
 import Header from './components/Header'
 import SectionTwo from './components/SectionTwo'
@@ -13,11 +12,10 @@ import SectionEight from './components/SectionEight'
 import SectionNine from './components/SectionNine'
 import SectionTen from './components/SectionTen'
 
-import pdf from './pdfs/api-connect.pdf'
+import pdf from './pdfs/api-connect2024.pdf'
 
 function App() {
 
-  let scrollPosition = useScrollPosition()
   let prefersReducedMotion = window.matchMedia(
     `(prefers-reduced-motion: reduce)`
   ).matches;
@@ -40,7 +38,7 @@ function App() {
         <div className="footer-container">
           <span>Copyright © 2024 IBM</span> 
           <div class="download-button-container">
-            <a href={pdf} download="IBM API Connect Design Showcase 2023" class="download-button" >Download pdf</a>
+            <a href={pdf} download="IBM API Connect Design Showcase 2024" class="download-button" >Download pdf</a>
           </div>
         </div>
       </footer>  
