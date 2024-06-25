@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/api-connect-design-showcase/static/css/main.d3e69a84.css",
+    "main.css": "/api-connect-design-showcase/static/css/main.f5069897.css",
     "main.js": "/api-connect-design-showcase/static/js/main.08d514ec.js",
     "static/media/video.mp4": "/api-connect-design-showcase/static/media/video.f892dd9db3faa2fb07cc.mp4",
     "static/media/api-connect.pdf": "/api-connect-design-showcase/static/media/api-connect.347f7551be49d91c314b.pdf",
@@ -194,11 +194,11 @@
     "static/media/IBMPlexMono-Light-Latin3.woff2": "/api-connect-design-showcase/static/media/IBMPlexMono-Light-Latin3.8a014da16bb5df1e9830.woff2",
     "static/media/IBMPlexMono-Regular-Latin3.woff2": "/api-connect-design-showcase/static/media/IBMPlexMono-Regular-Latin3.cacfd1d7dbd14067b970.woff2",
     "index.html": "/api-connect-design-showcase/index.html",
-    "main.d3e69a84.css.map": "/api-connect-design-showcase/static/css/main.d3e69a84.css.map",
+    "main.f5069897.css.map": "/api-connect-design-showcase/static/css/main.f5069897.css.map",
     "main.08d514ec.js.map": "/api-connect-design-showcase/static/js/main.08d514ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3e69a84.css",
+    "static/css/main.f5069897.css",
     "static/js/main.08d514ec.js"
   ]
 }
